@@ -1,0 +1,22 @@
+<h2 class="heroName" mat-dialog-title [align]="'center'">{{ hero.name }}</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="image-container">
+    <img [src]="hero.image.url" alt="hero">
+  </div>
+  <div class="content-container">
+    <h3>Name: {{ hero.name }}</h3>
+    <h3>FullName: {{ hero.biography["full-name"] }}</h3>
+
+    <h3>Group affiliation:</h3>
+    <p>{{hero.connections["group-affiliation"]}}</p>
+
+    <h3>Gender & Race: {{hero.appearance.gender + ' & ' + hero.appearance.race}}</h3>
+
+    <h3>Relatives: </h3>
+    <p>{{hero.connections.relatives}}</p>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
+

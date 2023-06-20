@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="wrapper_left">
+      <h2 class="username">{{ username }}</h2>
+      <input class="search" placeholder="Name hero" type="text" [formControl]="heroName" (keydown.enter)="searchClick(heroName.value)">
+      <button class="button_search" (click)="searchClick(heroName.value)">
+        <i class="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+      </button>
+    </div>
+    <button (click)="exit()" class="exit">Exit</button>
+  </div>
+</div>

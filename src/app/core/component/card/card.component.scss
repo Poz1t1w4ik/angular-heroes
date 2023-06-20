@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  background: url(/assets/image/background-card.png), linear-gradient(202.75deg, #000000 9.27%, #626262 54.51%, #161616 100.18%);
+  background-blend-mode: hard-light, normal;
+  border-radius: 32px;
+  width: 350px;
+  height: 500px;
+
+  & .wrapper {
+
+    & .wrapper-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 10px;
+
+      & img {
+        width: 30px;
+        height: 30px;
+      }
+
+      & .wrapper-header_left {
+        display: flex;
+        align-items: center;
+
+        & .heroName {
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 150%;
+          color: #FFFFFF;
+          margin-bottom: 0;
+          margin-left: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 250px;
+        }
+      }
+    }
+
+    & .wrapper-hero {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+
+       & img {
+         max-height: 280px;
+       }
+    }
+
+    & .wrapper-info {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 120%;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    & .detail {
+      background: #1C2431;
+      border: 3px solid #000000;
+      border-radius: 16px;
+      padding: 4px 10px;
+      cursor: pointer;
+      display: flex;
+      margin: 0 auto;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 32px;
+      color: #FFFFFF;
+
+      &:hover {
+        background: #FFFFFF;
+        color: #1C2431;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+  }
+}

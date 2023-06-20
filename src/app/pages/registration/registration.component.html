@@ -1,1 +1,23 @@
-<p>registration works!</p>
+<div class="container">
+  <div class="wrapper">
+    <h2 class="title">Register</h2>
+    <form [formGroup]="myForm" id="myForm">
+      <input type="text" placeholder="First Name" formControlName="firstName">
+      <input type="text" placeholder="Last Name" formControlName="lastName">
+      <input type="text" placeholder="Username" formControlName="username">
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <p
+        class="error"
+        *ngIf="myForm.controls['password'].invalid && myForm.controls['password'].dirty && myForm.controls['password'].touched"
+      >
+        The password must be at least 6 characters long. Have 1 small letter, 1 capital letter and 1 number.
+      </p>
+      <input type="password" placeholder="Confirm Password" formControlName="confirmPassword">
+    </form>
+    <div class="buttons">
+      <button [disabled]="myForm.invalid" class="button" type="submit" form="myForm" (click)="register()">Register</button>
+      <button class="button" type="button" routerLink="/authorization">Have account? Sign In</button>
+    </div>
+  </div>
+</div>

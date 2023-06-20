@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 99px);
+
+  & .wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 99px);
+}
+
+::ng-deep {
+
+  & mat-paginator {
+    background-color: transparent !important;
+  }
+
+  & .mat-mdc-paginator-page-size {
+    display: none !important;
+  }
+}

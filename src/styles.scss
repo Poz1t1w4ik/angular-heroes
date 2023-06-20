@@ -2,3 +2,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  background: #5D4157;
+  background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);
+  background: linear-gradient(to right, #A8CABA, #5D4157);
+}

@@ -1,1 +1,19 @@
-<p>authorization works!</p>
+<div class="container">
+  <div class="wrapper">
+    <h2 class="title">Login</h2>
+    <form [formGroup]="myForm" (keydown.enter)="auth()" id="myForm">
+      <input type="text" placeholder="Username" formControlName="username">
+      <input type="password" placeholder="Password" formControlName="password">
+      <p
+        class="error"
+        *ngIf="myForm.controls['password'].invalid && myForm.controls['password'].dirty && myForm.controls['password'].touched"
+      >
+        The password must be at least 6 characters long. Have 1 small letter, 1 capital letter and 1 number.
+      </p>
+    </form>
+    <div class="buttons">
+      <button [disabled]="myForm.invalid" class="button" type="submit" form="myForm" (click)="auth()">Sign in</button>
+      <button class="button" type="button" routerLink="/registration">Register</button>
+    </div>
+  </div>
+</div>

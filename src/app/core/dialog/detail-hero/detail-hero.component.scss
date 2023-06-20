@@ -1,0 +1,30 @@
+.image-container {
+  float: left;
+  margin-right: 10px;
+}
+
+.content-container {
+  overflow: hidden;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  & h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 150%;
+  }
+}
+
+.mat-typography {
+  overflow: hidden;
+}
+
+.heroName {
+  font-family: "Work Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}

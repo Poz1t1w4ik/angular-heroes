@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="wrapper-header">
+      <div class="wrapper-header_left">
+        <img src="/assets/image/logo.png" alt="logo">
+        <p class="heroName">{{ hero.name }}</p>
+      </div>
+      <img src="/assets/image/angular.png" alt="angular">
+    </div>
+    <div class="wrapper-hero">
+      <img class="hero-img" [src]="hero.image.url" alt="hero">
+    </div>
+    <div class="wrapper-info">
+      <p>Name: {{ hero.name }}</p>
+      <p>FullName: {{ hero.biography["full-name"] }}</p>
+      <p>Alignment: {{ hero.biography.alignment }}</p>
+    </div>
+    <button class="detail" (click)="detailInfo()">Detail Info</button>
+  </div>
+</div>
